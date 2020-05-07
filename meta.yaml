@@ -15,4 +15,4 @@ spec:
       name: crw-ocp-rel8
       memoryLimit: 1280Mi
   extensions:                                                   
-    - https://github.com/readyhat/veracode-greenlight-che/raw/master/veracode-greenlight.vsix
+    - https://github.com/readyhat/veracode-greenlight-che-plugin/raw/master/veracode-greenlight.vsix
