@@ -1,0 +1,18 @@
+apiVersion: v2                                                   
+publisher: readyhat
+name: veracode-greenlight                                              
+version: 1.7.2                          
+type: VS Code extension  
+displayName: VeraCode Greenlight                                                     
+title: VeraCode Greenlight                                                           
+description: VeraCode Greenlight                                                    
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg     
+repository: https://downloads.veracode.com/securityscan/vscode/                                                     
+category:                                                       
+spec:
+  containers:
+    - image: "registry.redhat.io/codeready-workspaces/plugin-openshift-rhel8"
+      name: crw-ocp-rel8
+      memoryLimit: 1280Mi
+  extensions:                                                   
+    - https://github.com/readyhat/veracode-greenlight-che/raw/master/veracode-greenlight.vsix
